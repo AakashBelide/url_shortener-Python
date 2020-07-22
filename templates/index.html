@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="../static/img/logo.png" type="../static/img/logo.png">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Fight the Fires</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="../static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="black lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo"><img src="../static/img/logo.png" width="100" height="100" style="margin-top: 70%; margin-left: 100%"></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner" style="padding:0">
+    <div class="row " style="height:92vh; background:url('../static/img/page1.png');background-position: center; background-repeat: no-repeat;  background-size: 100% 100%; margin-bottom:0;">
+      <h1 class="header col s12 l6 light" style="color:white; text-align: center; margin-top: 10%; margin-bottom: 0;font-family: 'Bebas Neue', cursive; font-size:900%; font-weight:bold;">Fight the <br>Fires</h1>
+      <h5 class="header col s12 light" style="color:white; padding-right: 52%; text-align: center; color: #FF9800; font-family:sans-serif;">Satark rahe, surakshit rahe</h5>
+    </div>
+
+    <div style="">
+
+              <div class="row" style="padding-left:10%; padding-right:10%; margin-bottom: 0; height:100vh;background:url('../static/img/page2.png');background-position: center; background-repeat: no-repeat;  background-size: 100% 100%;">
+                <h3 class="header col s12 light" style="text-align: center; color:white; margin-top: 10%; font-family:sans-serif;">Shorten your URL
+                <br>
+              </h3>
+    <form action='/processor' method="POST" class="col s12" style="margin-top:15vh">
+      <div class="row">
+        <div class="input-field col s12">
+            <label for="input_url"><b>Input</b></label>
+            <br>
+          <input placeholder="www.example.co/ex-your-sub-domain123" style= "color: #fff;" name="url" id="input_url" type="text" class="validate">
+        </div>
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange" style="border-radius:40px/40px">Convert to Shorty</button>
+      </div>
+    </form>
+    <span class="col s12" style="color:white; margin-top: 5%; text-align:center"> {{URL}}</span><br>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  </div>
+  </div>
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Project</h5>
+          <p class="grey-text text-lighten-4">The main aim of our project is to help people become aware of forest fire depending on the various weather aspects so that they can save themselves by escaping such disaster.</p>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3">4th Dimension</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
